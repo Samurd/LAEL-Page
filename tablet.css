@@ -8,12 +8,12 @@
 }
 
 
-header {
+#header-main {
     text-align: center;
     height: 900px;
 }
 
-header img {
+#header-main img {
     width: 600px;
 
 }
