@@ -70,7 +70,6 @@ main {
     gap: 8px;
     height: 350px;
     overflow-x: scroll;
-    justify-content: center;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     overflow-y: hidden;
