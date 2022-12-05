@@ -1,3 +1,7 @@
+.main-images-container {
+    margin: 70px 0;
+}
+
 .images-container--slider {
     overflow: hidden;
     justify-content: center;
@@ -12,4 +16,54 @@ header {
 header img {
     width: 600px;
 
+}
+
+.images-container--slider {
+    display: flex;
+    gap: 8px;
+    height: 420px;
+}
+
+.images-container--card {
+    position: relative;
+    text-align: center;
+    scroll-snap-align: center;
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    margin: 50px 5px 0;
+    background-color: var(--just-white);
+}
+
+.images-container--card img {
+    max-width: 450px;
+    width: 350px ;
+    height: 350px;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-images--title {
+    margin-top: 90px;
+}
+
+.main-images--title h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 10px;
+}
+
+.main-images--title p {
+    font-size: 20px;
+}
+
+.main-images-container .dep {
+    font-size: 20px;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 8px;
+    line-height: 20px;
 }
