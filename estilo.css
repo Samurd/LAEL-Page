@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-main:#58CFED;
+    --white:#FFFFFF;
+    --gray-subtitle:#8D8D8D;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    min-width: 320px;
+    height: 790px;
+    background-color: var(--blue-main);
+    text-align: center;
+}
+
+header img {
+    width: 350px;
+    margin-top: 190px;
+   align-self: center;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+
+.main-images-container {
+    width: 100%;
+    height: 550px;
+    min-width: 320px;
+    padding-bottom:70px ;
+    text-align: center;
+}
+
+.main-images--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main-images--title h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 10px;
+    margin-top: 30px;
+}
+
+.main-images--title p {
+    font-size: 15px;
+    line-height: 13.5px;
+    font-weight: 400;
+    margin-top: 15px;
+    color: var(--gray-subtitle);
+    
+}
+
+.images-container--slider {
+    display: flex;
+    gap: 8px;
+    height: 350px;
+    overflow-x: scroll;
+    justify-content: center;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    overflow-y: hidden;
+
+
+}
+
+.images-container--card {
+    position: relative;
+    text-align: center;
+    scroll-snap-align: center;
+    width: 90%;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 5px 0;
+    background-color: var(--just-white);
+}
+
+.images-container--card img {
+    max-width: 300px;
+    width: 260px ;
+    height: 250px;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+border-radius: 20px 50px;
+
+}
+
+.main-images-container .dep {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 13.5px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 8px;
+    height: 72px;
+    width: 251px;
+    color: var(--gray-subtitle);
+
+
+}
+
+.main-images-container .button-ca {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 40px;
+    border: 2px solid var(--blue-main);
+    background-color: var(--white);
+    color: var(--blue-main);
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+footer {
+    min-width: 320px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--blue-main);
+    text-align: center;
+    color: var(--white);
+    padding-top: 20px;
+    font-size: 13px;
+}
