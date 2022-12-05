@@ -1,3 +1,15 @@
 .images-container--slider {
     overflow: hidden;
+    justify-content: center;
+}
+
+
+header {
+    text-align: center;
+    height: 900px;
+}
+
+header img {
+    width: 600px;
+
 }

@@ -17,15 +17,15 @@ body {
 header {
     width: 100%;
     min-width: 320px;
-    height: 790px;
+    height: 750px;
     background-color: var(--blue-main);
     text-align: center;
 }
 
 header img {
     width: 350px;
-    margin-top: 190px;
-   align-self: center;
+    margin-top: 160px;
+    align-self: center;
 }
 
 main {
