@@ -73,8 +73,6 @@ main {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     overflow-y: hidden;
-
-
 }
 
 .images-container--card {
