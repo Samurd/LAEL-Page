@@ -14,7 +14,93 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+header.abajo {
+    background-color: var(--white);
+    -webkit-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+-moz-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+}
+
+header.abajo .logoh {
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    background-image: url(./images/LOGO-LAEL-negro.png);
+}
+
+header.abajo .menu {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./icons/icons8-menú-redondeado-30\ \(1\).png);
+}
+
 header {
+    width: 100%;
+    min-width: 320px;
+    position: fixed;
+    height: 90px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header .logoh {
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    margin-right: 35px;
+    background-image: url(./images/LOGO-LAEL-3.png);
+}
+
+header nav label .menu {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(./icons/icons8-menú-redondeado-30.png);
+}
+
+header nav ul {
+    border-top: solid 2px black;
+    list-style: none;
+    position: absolute;
+    top: 5rem;
+    left:0.1%;
+    background-color: var(--white);
+    width: 100%;
+    -webkit-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    -moz-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    display: none;
+}
+
+header nav ul li {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ ul {
+    display: block;
+}
+
+
+
+
+
+#header-main {
     width: 100%;
     min-width: 320px;
     height: 750px;
@@ -22,8 +108,8 @@ header {
     text-align: center;
 }
 
-header img {
-    width: 350px;
+#header-main img {
+    width: 320px;
     margin-top: 160px;
     align-self: center;
 }

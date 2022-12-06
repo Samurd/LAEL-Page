@@ -18,10 +18,25 @@
 </head>
 <body>
     <header>
-        <img src="./images/logo-LAEL.png" alt="logo LAEL">
+        <a href="index.html"><span class="logoh"></span></a>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <span class="menu"></span>
+            </label>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+            </ul>
+        </nav>
     </header>
+    <section id="header-main">
+        <img src="./images/logo-LAEL.png" alt="logo LAEL">
+    </section>
     <main>
-        <section class="main-images-container">
+        <section class="main-images-container" id="servicios">
             <div class="main-images--title">
                 <h2>EXTENSIONES DE PESTAÑAS</h2>
                 <p>Mira algunos resultados de 
@@ -71,4 +86,5 @@
         <footer>©2022 <b>LAEL</b> - Todos los derechos reservados.</footer>
     </main>
 </body>
+<script src="./app.js"></script>
 </html>
