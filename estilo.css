@@ -114,6 +114,29 @@ header nav ul li a {
     align-self: center;
 }
 
+.button-ser {
+    position: absolute;
+    background-color: var(--white);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 93%;
+    left: calc(50% - 118px);
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.42);
+-moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.42);
+box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.42);
+}
+
+.button-ser span img {
+    display: inline-block;
+    margin-left: 5px;
+    width: 20px;
+    height: 18px;
+}
+
 main {
     width: 100%;
     height: auto;
@@ -139,7 +162,7 @@ main {
     font-size: 20px;
     font-weight: 700;
     line-height: 10px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .main-images--title p {
@@ -159,6 +182,7 @@ main {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     overflow-y: hidden;
+    margin: 0 16px;
 }
 
 .images-container--card {
