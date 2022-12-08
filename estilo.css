@@ -201,7 +201,9 @@ main {
     width: 240px ;
     height: 250px;
     background-color: var(--just-white);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.6);
+box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.6);
     border-radius: 20px 50px;
     background-position: center;
     background-size: cover;
@@ -232,6 +234,26 @@ main {
     color: var(--blue-main);
     border-radius: 12px;
     text-decoration: none;
+}
+
+.section-map--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-width: 320px;
+    align-items: center;
+    height: 400px;
+}
+
+.section-map--container h2 {
+    margin: 20px 0;
+    font-size: 20px
+}
+
+.section-map--container iframe {
+
+    margin: 20px;
 }
 
 footer {
