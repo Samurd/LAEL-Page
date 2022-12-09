@@ -1,0 +1,42 @@
+.main-image-container {
+    height: 690px;
+}
+
+.main-image-container h2 {
+    font-size: 35px;
+
+}
+
+.main-image-container p {
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.main-image-container h3 {
+    font-size: 23px;
+}
+
+.image-main {
+    width: 420px;
+    height: 320px;
+}
+
+.images-container--slider {
+    justify-content: center;
+}
+
+.button-ca {
+    max-width: 260px;
+    font-size: 20px;
+}
+
+.section-map--container h2 {
+    font-size: 35px;
+}
+
+
+
+.section-map--container iframe {
+    margin: 20px 0;
+    width: 70%;
+}
