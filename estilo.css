@@ -17,8 +17,9 @@ body {
 header.abajo {
     background-color: var(--white);
     -webkit-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
--moz-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    -moz-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    transition: all 400ms ease;
 }
 
 header.abajo .logoh {
@@ -28,11 +29,16 @@ header.abajo .logoh {
     background-image: url(./images/LOGO-LAEL-negro.png);
 }
 
-header.abajo .menu {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url(./icons/icons8-menú-redondeado-30\ \(1\).png);
+header.abajo .raya1 {
+    background-color: black;
+}
+
+header.abajo .raya2 {
+    background-color: black;
+}
+
+header.abajo .raya3 {
+    background-color: black;
 }
 
 header {
@@ -53,26 +59,56 @@ header .logoh {
     width: 150px;
     margin-right: 35px;
     background-image: url(./images/LOGO-LAEL-3.png);
+    transition: all 400ms ease;
 }
 
-header nav label .menu {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    background-image: url(./icons/icons8-menú-redondeado-30.png);
+header nav label {
+    height: 9px;
+    width: 10px;
+}
+
+
+
+.raya1 {
+    width: 28px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 81%;
+    top: 31px;
+    border-radius: 90px;
+    transition:  all 400ms ease;
+}
+
+.raya2 {
+    border-radius: 90px;
+    width: 28px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 81%;
+    top: 40px;
+    transition:  all 400ms ease;
+}
+
+.raya3 {
+    border-radius: 90px;
+    width: 28px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 81%;
+    top: 50px;
+    transition:  all 400ms ease;
 }
 
 header nav ul {
-    border-top: solid 2px black;
     list-style: none;
     position: absolute;
     top: 5rem;
     left:0.1%;
     background-color: var(--white);
     width: 100%;
-    -webkit-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
-    -moz-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
-    box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
     display: none;
 }
 
@@ -91,6 +127,22 @@ header nav ul li a {
 #check {
     display: none;
 }
+
+#check:checked ~ .checkbtn .raya1 {
+    transform: rotate(135deg);
+    top: 40px;
+}
+
+#check:checked ~ .checkbtn .raya2 {
+    opacity: 0;
+}
+
+#check:checked ~ .checkbtn .raya3 {
+    transform: rotate(-135deg);
+    top: 40px;
+}
+
+
 
 #check:checked ~ ul {
     display: block;
