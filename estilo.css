@@ -57,7 +57,7 @@ header .logoh {
     display: inline-block;
     height: 40px;
     width: 150px;
-    margin-right: 35px;
+    margin-left: -50px;
     background-image: url(./images/LOGO-LAEL-3.png);
     transition: all 400ms ease;
 }
@@ -105,11 +105,15 @@ header nav label {
 header nav ul {
     list-style: none;
     position: absolute;
-    top: 5rem;
+    top: 5.5rem;
     left:0.1%;
     background-color: var(--white);
+    opacity: .9;
     width: 100%;
     display: none;
+    -webkit-box-shadow: 0px 4px 9px -3px rgba(0,0,0,0.78);
+-moz-box-shadow: 0px 4px 9px -3px rgba(0,0,0,0.78);
+box-shadow: 0px 4px 9px -3px rgba(0,0,0,0.78);
 }
 
 header nav ul li {
