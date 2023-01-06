@@ -178,33 +178,56 @@ header nav ul li a {
 
 /*Botton del inicio de "Conoce nuestros servicios */
 
-.button-ser {
-    position: absolute;
-    background-color: var(--white);
-    font-size: 16px;
+
+/* Section de blog */
+
+.section-blog--container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    top: 725px;
-    left: calc(50% - 118px);
-    padding: 10px;
+    align-items: center;
+    min-width: 320px;
+    text-align: center;
+    margin: 30px auto;
+    height: 1300px;
+}
+
+
+.section-blog--container h2 {
+    margin: 30px 0;
+}
+
+.cards-container--blog {
+    display: flex;
+    
+}
+
+.card-blog {
+    margin: 8px auto;
+}
+
+.blog-images--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
     border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.42);
--moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.42);
-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.42);
+    height: 320px;
+    min-width: 320px;
+    text-align: center;
+    margin: 5px auto;
 }
 
-.button-ser span img {
-    display: inline-block;
-    margin-left: 5px;
-    width: 20px;
-    height: 18px;
+.blog-images--container img {
+    min-width: 300px;
+    max-width: 320px;
+    border-radius: 20px;
+    height: 320px;
 }
 
-
-main {
-    width: 100%;
-    height: auto;
+.titles--container {
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 /*Seccion de las card, es decir; la zona de servicios */ 

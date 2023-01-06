@@ -20,6 +20,11 @@
 
 }
 
+.cards-container--blog {
+    display: flex;
+    flex-direction: row;
+    
+}
 
 .section-map--container h2 {
     font-size: 35px;
