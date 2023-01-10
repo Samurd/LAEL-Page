@@ -1,8 +1,5 @@
-.button-ser {
-    top: 875px;
-}
 
-.container-cards {
+.blog--container-cards {
     display: flex;
     max-width: 1200px;
     justify-content: center;
