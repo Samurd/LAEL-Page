@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue-main:#58CFED;
+    --white:#FFFFFF;
+    --gray-subtitle:#8D8D8D;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Barra de navegacion */
+
+header.abajo {
+    background-color: var(--white);
+    -webkit-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    -moz-box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    box-shadow: -1px 4px 18px -1px rgba(0,0,0,0.43);
+    transition: all 400ms ease;
+}
+
+header.abajo .logoh {
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    background-image: url(./images/LOGO-LAEL-negro.png);
+}
+
+header.abajo .raya1 {
+    background-color: black;
+}
+
+header.abajo .raya2 {
+    background-color: black;
+}
+
+header.abajo .raya3 {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    min-width: 320px;
+    position: fixed;
+    height: 90px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header .logoh {
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    margin-left: -50px;
+    background-image: url(./images/LOGO-LAEL-3.png);
+    transition: all 400ms ease;
+}
+
+header nav label {
+    height: 9px;
+    width: 10px;
+}
+
+
+
+.raya1 {
+    width: 28px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 81%;
+    top: 31px;
+    border-radius: 90px;
+    transition:  all 400ms ease;
+}
+
+.raya2 {
+    border-radius: 90px;
+    width: 28px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 81%;
+    top: 40px;
+    transition:  all 400ms ease;
+}
+
+.raya3 {
+    border-radius: 90px;
+    width: 28px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 81%;
+    top: 50px;
+    transition:  all 400ms ease;
+}
+
+header nav ul {
+    list-style: none;
+    position: absolute;
+    top: 5.5rem;
+    left:0.1%;
+    background-color: var(--white);
+    opacity: .9;
+    width: 100%;
+    display: none;
+    -webkit-box-shadow: 0px 4px 9px -3px rgba(0,0,0,0.78);
+-moz-box-shadow: 0px 4px 9px -3px rgba(0,0,0,0.78);
+box-shadow: 0px 4px 9px -3px rgba(0,0,0,0.78);
+}
+
+header nav ul li {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .checkbtn .raya1 {
+    transform: rotate(135deg);
+    top: 40px;
+}
+
+#check:checked ~ .checkbtn .raya2 {
+    opacity: 0;
+}
+
+#check:checked ~ .checkbtn .raya3 {
+    transform: rotate(-135deg);
+    top: 40px;
+}
+
+
+
+#check:checked ~ ul {
+    display: block;
+}
+
+
+/*Contenido principal */
+
+
+#header-main {
+    width: 100%;
+    height: 520px;
+    margin: 0 auto;
+}
+
+.title-main {
+    max-width: 320px;
+    margin: 0 auto;
+    position: absolute;
+    top: 54%;
+    padding-left: 20px;
+    font-size: 15px;
+    color: white;
+} 
+
+#header-main img {
+    width: 100%;
+    height: 550px;
+    display: block;
+    opacity: .8;
+    align-self: center;
+    background-image: url(./images/pexels-gustavo-fring-7446922.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.content-blog {
+    text-align: center;
+    margin: 70px 10px;
+}
+
+.content-blog p {
+    padding: 10px;
+}
+
+.section-blog--container h2 {
+    text-align: center;
+}
+
+.images-container--slider {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+    height: 290px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    overflow-y: hidden;
+    margin:  0 10px;
+    align-items: center;
+}
+
+.images-container--card {
+    position: relative;
+    text-align: center;
+    scroll-snap-align: center;
+    width: 90%;
+    max-width: 300px;
+    height: 250px;
+    background-color: var(--white);
+}
+
+.images-container--card img {
+    max-width: 300px;
+    width: 290px;
+    height: 250px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+/*Esto es la seccion del mapa */
+
+.section-map--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-width: 320px;
+    align-items: center;
+    height: 400px;
+    background-color:#a8eafa ;
+}
+
+.section-map--container h2 {
+    color: var(--white);
+    margin: 10px 0;
+    font-size: 20px
+}
+
+.section-map--container iframe {
+
+    margin: 10px;
+}
+
+footer {
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+    background-color: var(--blue-main);
+    text-align: center;
+    color: var(--white);
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+footer .redes {
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+footer .redes a {
+    text-decoration: none;
+    color: var(--white);
+}
