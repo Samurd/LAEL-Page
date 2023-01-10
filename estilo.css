@@ -182,120 +182,56 @@ header nav ul li a {
 /* Section de blog */
 
 .section-blog--container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 320px;
     text-align: center;
-    margin: 30px auto;
-    height: 1300px;
+    margin: 20px 0;
 }
-
 
 .section-blog--container h2 {
-    margin: 30px 0;
+    padding: 20px 0;
 }
 
-.cards-container--blog {
-    display: flex;
-    
-}
+
 
 .card-blog {
-    margin: 8px auto;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card-blog:active {
+    transform: scale(1.1);
+    transition: 300ms all ease;
+
+}
+
+.card-blog:hover {
+    transform: scale(1.1);
+    transition: 300ms all ease;
+
 }
 
 .blog-images--container {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 320px;
     border-radius: 20px;
     height: 320px;
-    min-width: 320px;
     text-align: center;
-    margin: 5px auto;
+    margin: 0 auto;
 }
 
+
 .blog-images--container img {
-    min-width: 300px;
+    min-width: 285px;
     max-width: 320px;
     border-radius: 20px;
-    height: 320px;
+    height: 285px;
 }
 
 .titles--container {
-    max-width: 320px;
+    max-width: 280px;
     margin: 0 auto;
 }
 
-/*Seccion de las card, es decir; la zona de servicios */ 
-
-
-.main-images-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 320px;
-    border-radius: 20px;
-    height: 420px;
-    min-width: 320px;
-    text-align: center;
-    margin: 30px auto;
-}
-
-.titles {
-    width: 80%;
-    min-width: 288px;
-    margin: 0 auto;
-}
-
-.titles h2 {
-    font-size: 20.5px;
-    font-weight: 700;
-    line-height: 10px;
-    margin: 6px 0;
-    color: var(--blue-main);
-}
-
-.container--button {
-    margin-top: 30px;
-}
-
-.button-vermas {
-    padding: 5px 110px;
-    color: var(--blue-main);
-    font-size: 15px;
-    text-decoration: none;
-   border: 2px solid var(--blue-main);
-    border-radius: 20px;
-}
-
-
-.container--images img {
-    border-radius: 20px;
-    margin-bottom: 10px;
-    max-width: 300px;
-    width: 285px ;
-    height: 285px;
-    background-color: var(--just-white);
-    background-position: center;
-}
-
-
-.main-images-container .button-ca {
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    padding: 5px 40px;
-    border: 2px solid var(--blue-main);
-    background-color: var(--white);
-    color: var(--blue-main);
-    border-radius: 12px;
-    text-decoration: none;
-}
 
 /*Esto es la seccion del mapa */
 

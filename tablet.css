@@ -1,8 +1,5 @@
-.button-ser {
-    top: 875px;
-}
 
-.container-cards {
+.blog--container-cards {
     display: flex;
     max-width: 1200px;
     justify-content: center;
@@ -20,11 +17,6 @@
 
 }
 
-.cards-container--blog {
-    display: flex;
-    flex-direction: row;
-    
-}
 
 .section-map--container h2 {
     font-size: 35px;
